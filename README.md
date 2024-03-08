@@ -1,6 +1,6 @@
-# Automated Tests - Ask the Octopus
+# Automated Tests - Pergunte ao Polvo
 
-This repository contains automated tests for the "Ask the Octopus" website, using Robot Framework and SeleniumLibrary to perform automated validations on the user interface.
+This repository contains automated tests for the "Pergunte ao Polvo" website, using Robot Framework and SeleniumLibrary to perform automated validations on the user interface.
 
 ## Initial Setup
 
