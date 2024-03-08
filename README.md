@@ -1,79 +1,78 @@
-# Testes Automatizados - Pergunte ao Polvo
+# Automated Tests - Ask the Octopus
 
-Este repositório contém testes automatizados para o site "Pergunte ao Polvo", utilizando Robot Framework e SeleniumLibrary para realizar validações automatizadas na interface do usuário.
+This repository contains automated tests for the "Ask the Octopus" website, using Robot Framework and SeleniumLibrary to perform automated validations on the user interface.
 
-## Configuração Inicial
+## Initial Setup
 
-Para executar os testes contidos neste repositório, você precisará configurar seu ambiente de desenvolvimento. Siga os passos abaixo para preparar seu ambiente.
+To execute the tests contained in this repository, you will need to set up your development environment. Follow the steps below to prepare your environment.
 
-### Pré-requisitos
+### Prerequisites
 
-- Python 3.6 ou superior
-- pip (gerenciador de pacotes do Python)
+- Python 3.6 or higher
+- pip (Python package manager)
 - Git
 
-### Instalação
+### Installation
 
-1. **Clonar o Repositório**
+1. **Clone the Repository**
 
-    Primeiro, clone o repositório para sua máquina local utilizando o Git:
+    First, clone the repository to your local machine using Git:
 
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
+    git clone https://github.com/your-user/your-repository.git
+    cd your-repository
     ```
 
-2. **Configurar o Ambiente Virtual**
+2. **Set Up the Virtual Environment**
 
-    É recomendado criar um ambiente virtual para instalar as dependências do projeto:
+    It is recommended to create a virtual environment to install the project's dependencies:
 
     ```bash
     python3 -m venv venv
     ```
 
-    Ative o ambiente virtual:
+    Activate the virtual environment:
 
-    - No Windows:
+    - On Windows:
         ```bash
         .\venv\Scripts\activate
         ```
 
-    - No MacOS/Linux:
+    - On MacOS/Linux:
         ```bash
         source venv/bin/activate
         ```
 
-3. **Instalar Dependências**
+3. **Install Dependencies**
 
-    Com o ambiente virtual ativado, instale as dependências necessárias executando:
+    With the virtual environment activated, install the necessary dependencies by executing:
 
     ```bash
     pip install robotframework robotframework-seleniumlibrary
     ```
 
-4. **Drivers para Navegadores**
+4. **Browser Drivers**
 
-    Para executar os testes no navegador de sua escolha, você precisará do driver correspondente. Baixe o driver para o navegador desejado (Chrome, Firefox, Edge, etc.) e certifique-se de que esteja no PATH do seu sistema.
+    To execute the tests in your browser of choice, you will need the corresponding driver. Download the driver for the desired browser (Chrome, Firefox, Edge, etc.) and ensure it is in your system's PATH.
 
     - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
     - [GeckoDriver (Firefox)](https://github.com/mozilla/geckodriver/releases)
     - [Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)
 
-## Executando os Testes
+## Running the Tests
 
-Para executar os testes, use o seguinte comando no terminal, estando na raiz do projeto:
+To run the tests, use the following command in the terminal, being at the project root:
 
 ```bash
 robot -d ./results tests
 ```
 
-Este comando executará todos os testes contidos no diretório tests e salvará os resultados na pasta results.
+This command will execute all the tests contained in the tests directory and save the results in the results folder.
 
-## Contribuição
-Sinta-se livre para contribuir com este projeto. Toda contribuição é bem-vinda, seja corrigindo bugs, adicionando novas funcionalidades ou melhorando a documentação.
+### Contribution
+Feel free to contribute to this project. Any contribution is welcome, whether it is fixing bugs, adding new features, or improving the documentation.
 
-## Licença
+### License
+This project is distributed under the MIT license. See the LICENSE file for more details.
 
-Este projeto é distribuído sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-Certifique-se de ajustar os URLs e nomes de diretórios conforme necessário para corresponder ao seu projeto específico. Este `README.md` fornece uma base sólida para seu projeto e instruções claras para qualquer pessoa que deseje usar ou contribuir para o seu repositório.
+Make sure to adjust the URLs and directory names as necessary to match your specific project. This README.md provides a solid foundation for your project and clear instructions for anyone who wishes to use or contribute to your repository.
