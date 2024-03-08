@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on darwin)" generated="2024-03-07T21:10:57.455627" rpa="false" schemaversion="5">
+<suite id="s1" name="Polvo" source="/Users/macbook/RobotTest/Scripts/polvo.robot">
+<test id="s1-t1" name="As a customer, I want to choose a team by givaway" line="13">
+<kw name="Given I am on Pergunte ao Polvo page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-07T21:10:57.543768" level="INFO">Opening browser 'Chrome' to base url 'https://pergunteaopolvo.com.br/'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-07T21:10:57.543613" elapsed="3.646966"/>
+</kw>
+<status status="PASS" start="2024-03-07T21:10:57.543226" elapsed="3.648078"/>
+</kw>
+<kw name="When the user digits Corinthians on the first option">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-07T21:11:01.193682" level="INFO">Typing text 'Corinthians' into text field '//*[@id="option1"]'.</msg>
+<arg>${Option1}</arg>
+<arg>Corinthians</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T21:11:01.192945" elapsed="0.134931"/>
+</kw>
+<status status="PASS" start="2024-03-07T21:11:01.192226" elapsed="0.135839"/>
+</kw>
+<kw name="And the user digits Palmeiras on the second option">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-07T21:11:01.328664" level="INFO">Typing text 'Palmeiras' into text field '//*[@id="option2"]'.</msg>
+<arg>${Option2}</arg>
+<arg>Palmeiras</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T21:11:01.328504" elapsed="0.048133"/>
+</kw>
+<status status="PASS" start="2024-03-07T21:11:01.328283" elapsed="0.049175"/>
+</kw>
+<kw name="And press Adivinhar button">
+<kw name="Submit Form" owner="SeleniumLibrary">
+<msg time="2024-03-07T21:11:01.378223" level="INFO">Submitting form 'None'.</msg>
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T21:11:01.378100" elapsed="0.156420"/>
+</kw>
+<status status="PASS" start="2024-03-07T21:11:01.377850" elapsed="0.156804"/>
+</kw>
+<kw name="Then Polvo should display the result">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${ResultXPath}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-07T21:11:01.535059" elapsed="0.023079"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-03-07T21:11:01.581812" level="INFO">${Result} = </msg>
+<var>${Result}</var>
+<arg>${ResultXPath}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T21:11:01.558336" elapsed="0.023589"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<msg time="2024-03-07T21:11:01.582285" level="FAIL">'' does not contain '//*[@id="option1"]'</msg>
+<arg>${Result}</arg>
+<arg>${Option1}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="FAIL" start="2024-03-07T21:11:01.582067" elapsed="0.000548">'' does not contain '//*[@id="option1"]'</status>
+</kw>
+<status status="FAIL" start="2024-03-07T21:11:01.534872" elapsed="0.047867">'' does not contain '//*[@id="option1"]'</status>
+</kw>
+<kw name="And close navigator">
+<status status="NOT RUN" start="2024-03-07T21:11:01.582884" elapsed="0.000045"/>
+</kw>
+<status status="FAIL" start="2024-03-07T21:10:57.542974" elapsed="4.040074">'' does not contain '//*[@id="option1"]'</status>
+</test>
+<status status="FAIL" start="2024-03-07T21:10:57.457419" elapsed="4.125899"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Polvo">Polvo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
